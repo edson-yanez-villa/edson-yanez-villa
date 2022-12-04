@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Edson Yañez | Backend Developer</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./static/main.css">
 </head>
 
-<body class="text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<body class="text-light bg_lead">
+    <nav class="navbar navbar-expand-lg navbar-dark bg_black_light">
         <div class="container">
             <a class="navbar-brand fw-bold fst-italic" style="color:#0082ca" href="#">Moises Edson Yañez Villa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,19 +32,23 @@
                         <a class="nav-link" href="#about-my">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div>
+        <!-- Header -->
         <header class="container">
             <div class="row p-4">
                 <div class="col-md-4">
@@ -53,7 +57,7 @@
                         src="./static/portfolio/profile.jpg" alt="">
                 </div>
                 <div class="col-md-8 my-auto d-flex align-items-end flex-column">
-                    <h1>Hi! I'm <strong style="color:#0082ca">Edson Yañez</strong></h1>
+                    <h1>Hi! I'm <strong class="title_blue">Edson Yañez</strong></h1>
                     <h3 class="hero__subtitle">Software Backend Developer</h3>
                     <p>Use my skills and intellect to create the best software solutions.</p>
 
@@ -61,30 +65,34 @@
                             class="fa-solid fa-download"></i></a>
                     <p>
                         <!-- Facebook -->
-                        <a href="https://www.facebook.com/yanezvilla.edson"><i
+                        <a href="https://www.facebook.com/yanezvilla.edson" target="_blank"><i
                                 class="fab fa-facebook-f social__icons fa-2x me-3" style="color: #3b5998;"></i></a>
 
                         <!-- Linkedin -->
-                        <a href="https://www.linkedin.com/in/moises-edson-ya%C3%B1ez-villa-68b309125/"><i
-                                class="fab fa-linkedin-in social__icons fa-2x me-3" style="color: #0082ca;"></i></a>
+                        <a href="https://www.linkedin.com/in/moises-edson-ya%C3%B1ez-villa-68b309125/" target="_blank"><i
+                                class="fab fa-linkedin-in social__icons title_blue fa-2x me-3"></i></a>
 
                         <!-- Github -->
-                        <a href="https://github.com/edson-yanez-villa"><i
+                        <a href="https://github.com/edson-yanez-villa" target="_blank"><i
                                 class="fab fa-github social__icons fa-2x me-3"></i></a>
                     </p>
                 </div>
             </div>
         </header>
-        <div class="bg-black" id="about-my">
+
+        <!-- About me -->
+        <div class="bg_black_light" id="about-my">
             <div class="container p-4">
                 <h3 class="text-center">About me</h3>
                 <div class="row">
                     <div class="col-md-5 my-auto">
-                        <h3 style="color:#0082ca">Edson Yañez</h3>
-                        <p class="text-justify">I'm experienced and skillful in software development with
+                        <h3 class="title_blue">Edson Yañez</h3>
+                        <p>I'm experienced and skillful in software development with
                             3+ years of experience, I'm focused on developing
                             backed side software using Flask and Spring Boot
                             frameworks.
+                        </p>
+                        <p>
                             I am a fast learner and like to share knowledge with
                             others. I love solving problems and helping people make
                             things faster and easier. Looking for new challenges that
@@ -99,155 +107,351 @@
             </div>
         </div>
 
-        <div class="row my-4 text-center">
-            <h3>My Projects</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, nostrum.</p>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+        <!-- Skills -->
+        <div class="container p-4" id="skills">
+            <h3 class="text-center">Skills</h3>
+            <div class="row">
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg width="70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 124 141.53199999999998">
+                            <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e34f26" />
+                            <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ef652a" />
+                            <path
+                                d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
+                                fill="#fff" />
+                        </svg>
+                        <p>HTML | Intermediate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg fill="none" width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53">
+                            <path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="#1b73ba" />
+                            <path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="#1c88c7" />
+                            <path
+                                d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z"
+                                fill="#fff" />
+                        </svg>
+                        <p>CSS | Intermediate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg fill="none" width="70" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 124 141.53199999999998">
+                            <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e9ca32" />
+                            <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ffde25" />
+                            <g fill="#fff">
+                                <path
+                                    d="M57 26H43.5v78L33 102V91.5l-12.5-2V113l36.5 9.5zM67.127 26H104.5L102 40.95H81.394v24.533H102L99.5 115l-32.373 7.5V107L89 99.5 90.263 79l-23.136 3.35z" />
+                            </g>
+                        </svg>
+                        <p>JavaScript | Basic</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg width="70" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMinYMin meet">
+                            <defs>
+                                <linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a">
+                                    <stop stop-color="#387EB8" offset="0%" />
+                                    <stop stop-color="#366994" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%" id="b">
+                                    <stop stop-color="#FFE052" offset="0%" />
+                                    <stop stop-color="#FFC331" offset="100%" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z"
+                                fill="url(#a)" />
+                            <path
+                                d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z"
+                                fill="url(#b)" />
+                        </svg>
+                        <p>Python | Intermediate</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+            <div class="row">
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="6.527 4.399 290.829 540.906">
+                            <path
+                                d="M285.104 430.945h-2.037v-1.14h5.486v1.14h-2.025v5.688h-1.424v-5.688zm10.942.297h-.032l-2.02 5.393h-.924l-2.006-5.393h-.024v5.393h-1.343v-6.828h1.976l1.86 4.835 1.854-4.835h1.969v6.828h-1.311l.001-5.393z"
+                                fill="#e76f00" />
+                            <path
+                                d="M102.681 291.324s-14.178 8.245 10.09 11.035c29.4 3.354 44.426 2.873 76.825-3.259 0 0 8.518 5.341 20.414 9.967-72.63 31.128-164.376-1.803-107.329-17.743M93.806 250.704s-15.902 11.771 8.384 14.283c31.406 3.24 56.208 3.505 99.125-4.759 0 0 5.937 6.018 15.271 9.309-87.815 25.678-185.624 2.025-122.78-18.833"
+                                fill="#5382a1" />
+                            <path
+                                d="M168.625 181.799c17.896 20.604-4.701 39.146-4.701 39.146s45.439-23.458 24.571-52.833c-19.491-27.395-34.438-41.005 46.479-87.934.001-.001-127.013 31.721-66.349 101.621"
+                                fill="#e76f00" />
+                            <path
+                                d="M264.684 321.369s10.492 8.646-11.555 15.333c-41.923 12.7-174.488 16.535-211.314.507-13.238-5.76 11.587-13.752 19.396-15.429 8.144-1.766 12.798-1.437 12.798-1.437-14.722-10.371-95.157 20.363-40.857 29.166 148.084 24.015 269.944-10.814 231.532-28.14M109.499 208.617s-67.431 16.016-23.879 21.832c18.389 2.462 55.047 1.905 89.192-.956 27.906-2.354 55.928-7.358 55.928-7.358s-9.84 4.214-16.959 9.074c-68.475 18.01-200.756 9.631-162.674-8.79 32.206-15.568 58.392-13.802 58.392-13.802M230.462 276.231c69.608-36.171 37.425-70.932 14.96-66.248-5.506 1.146-7.961 2.139-7.961 2.139s2.045-3.202 5.947-4.588c44.441-15.624 78.619 46.081-14.346 70.521 0 0 1.079-.962 1.4-1.824"
+                                fill="#5382a1" />
+                            <path
+                                d="M188.495 4.399s38.55 38.562-36.563 97.862c-60.233 47.567-13.735 74.689-.025 105.678-35.158-31.723-60.96-59.647-43.65-85.637 25.406-38.151 95.792-56.648 80.238-117.903"
+                                fill="#e76f00" />
+                            <path
+                                d="M116.339 374.246c66.815 4.277 169.417-2.373 171.846-33.987 0 0-4.67 11.984-55.219 21.503-57.027 10.731-127.364 9.479-169.081 2.601.002-.002 8.541 7.067 52.454 9.883"
+                                fill="#5382a1" />
+                            <path
+                                d="M105.389 495.049c-6.303 5.467-12.96 8.536-18.934 8.536-8.527 0-13.134-5.113-13.134-13.314 0-8.871 4.937-15.357 24.739-15.357h7.328l.001 20.135m17.392 19.623V453.93c0-15.518-8.85-25.756-30.188-25.756-12.457 0-23.369 3.076-32.238 6.999l2.56 10.752c6.983-2.563 16.022-4.949 24.894-4.949 12.292 0 17.58 4.949 17.58 15.181v7.678h-6.135c-29.865 0-43.337 11.593-43.337 28.993 0 15.018 8.878 23.554 25.594 23.554 10.745 0 18.766-4.437 26.264-10.929l1.361 9.221 13.645-.002zM180.824 514.672h-21.691l-26.106-84.96h18.944l16.198 52.199 3.601 15.699c8.195-22.698 13.992-45.726 16.891-67.898h18.427c-4.938 27.976-13.822 58.684-26.264 84.96M264.038 495.049c-6.315 5.467-12.983 8.536-18.958 8.536-8.512 0-13.131-5.113-13.131-13.314 0-8.871 4.947-15.357 24.748-15.357h7.341v20.135m17.39 19.623V453.93c0-15.518-8.871-25.756-30.186-25.756-12.465 0-23.381 3.076-32.246 6.999l2.557 10.752c6.985-2.563 16.041-4.949 24.906-4.949 12.283 0 17.579 4.949 17.579 15.181v7.678h-6.146c-29.873 0-43.34 11.593-43.34 28.993 0 15.018 8.871 23.554 25.584 23.554 10.752 0 18.77-4.437 26.28-10.929l1.366 9.221 13.646-.002zM36.847 529.099c-4.958 7.239-12.966 12.966-21.733 16.206L6.527 535.2c6.673-3.424 12.396-8.954 15.055-14.104 2.3-4.581 3.252-10.485 3.252-24.604v-96.995h18.478v95.666c-.001 18.875-1.51 26.5-6.465 33.936"
+                                fill="#e76f00" />
+                        </svg>
+                        <p>Java | Intermediate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" viewBox="0 0 192.756 192.756">
+                            <g fill-rule="evenodd" clip-rule="evenodd">
+                                <path fill="#fff" d="M0 0h192.756v192.756H0V0z" />
+                                <path
+                                    d="M8.504 128.227h5.845v-23.023l9.013 20.078c1.07 2.408 2.499 3.256 5.354 3.256 2.856 0 4.284-.848 5.354-3.256l9.013-20.078v23.023h5.8v-22.979c0-2.23-.893-3.303-2.722-3.883-4.417-1.383-7.407-.178-8.745 2.812l-8.834 19.766-8.566-19.766c-1.294-2.99-4.328-4.195-8.745-2.812-1.874.58-2.766 1.652-2.766 3.883v22.979h-.001zM53.746 109.486h5.8v12.672c-.044.713.223 2.32 3.436 2.365 1.606.043 12.537 0 12.626 0v-15.082h5.845c.044 0 0 20.568 0 20.658.044 5.086-6.291 6.156-9.191 6.246H53.88v-3.926s18.338.045 18.382 0c3.748-.357 3.302-2.23 3.302-2.855v-1.518H63.205c-5.756-.088-9.415-2.588-9.459-5.488 0-.267.134-12.937 0-13.072zM179.076 94.896c-3.568-.089-6.291.223-8.656 1.249-.668.268-1.695.268-1.828 1.116.357.355.445.936.713 1.428.58.893 1.518 2.096 2.365 2.721.893.715 1.83 1.428 2.811 2.053 1.785 1.07 3.748 1.65 5.398 2.723 1.027.623 2.008 1.428 2.99 2.141.445.357.803.893 1.383 1.115v-.088c-.312-.402-.402-.982-.67-1.43l-1.338-1.338c-1.293-1.695-2.945-3.213-4.686-4.461-1.383-.982-4.506-2.365-5.086-3.971-.045-.045-.09-.045-.09-.09.982-.135 2.143-.49 3.035-.715 1.518-.4 2.9-.312 4.461-.713.715-.224 1.428-.402 2.143-.625v-.402c-.803-.803-1.338-1.918-2.23-2.632-2.275-1.963-4.775-3.882-7.318-5.488-1.428-.937-3.168-1.517-4.684-2.275-.492-.223-1.385-.357-1.74-.803-.805-.982-1.205-2.276-1.83-3.436a123.45 123.45 0 0 1-3.658-7.764c-.758-1.74-1.295-3.48-2.23-5.087-4.641-7.585-9.594-12.18-17.312-16.687-1.65-.937-3.613-1.338-5.711-1.829-1.115-.09-2.23-.134-3.346-.224-.67-.268-1.383-1.115-2.053-1.517-2.543-1.606-9.102-5.131-10.977-.491-1.205 2.9 1.785 5.756 2.855 7.229.76 1.026 1.695 2.187 2.232 3.346.355.758.4 1.517.713 2.32.758 2.008 1.383 4.194 2.32 6.023.49.937 1.025 1.919 1.65 2.767.357.491 1.027.714 1.115 1.517-.625.892-.668 2.231-1.025 3.346-1.562 5.042-.982 11.244 1.338 14.991.715 1.115 2.365 3.569 4.686 2.633 2.008-.848 1.561-3.347 2.141-5.622.135-.491.045-.848.312-1.205v.089c.58 1.249 1.205 2.454 1.83 3.658 1.338 2.187 3.748 4.507 5.801 6.023 1.025.803 1.873 2.187 3.256 2.632v-.09h-.133c-.268-.4-.67-.579-.982-.892-.803-.803-1.695-1.785-2.365-2.677-1.828-2.499-3.479-5.265-4.996-8.121-.715-1.383-1.34-2.9-1.918-4.283-.225-.535-.225-1.338-.715-1.651-.67 1.026-1.605 1.874-2.143 3.079-.803 1.919-.936 4.283-1.203 6.693-.18.089-.135.044-.225.134-1.426-.357-1.918-1.83-2.453-3.079-1.293-3.168-1.562-8.254-.402-11.913.312-.937 1.697-3.882 1.117-4.774-.27-.848-1.117-1.383-1.607-2.052-.625-.803-1.205-1.874-1.65-2.811-1.07-2.499-1.562-5.265-2.723-7.763-.58-1.205-1.471-2.41-2.23-3.436-.848-1.205-1.785-2.052-2.453-3.48-.223-.491-.535-1.294-.223-1.83.133-.357.268-.491.623-.625.58-.446 2.232.179 2.855.401 1.607.714 2.99 1.339 4.373 2.276.67.446 1.34 1.293 2.143 1.517h.893c1.428.312 3.033.089 4.371.491 2.365.713 4.506 1.829 6.426 3.079 5.889 3.703 10.664 8.968 13.965 15.259.535 1.026.758 1.963 1.205 3.034.938 2.187 2.141 4.417 3.078 6.514.893 2.142 1.83 4.284 3.123 6.023.715.937 3.391 1.428 4.596 1.918.848.357 2.23.758 3.035 1.25 1.561.892 3.033 2.008 4.506 3.034.712.496 2.942 1.611 3.032 2.548z"
+                                    fill="#00678c" />
+                                <path
+                                    d="M133.566 56.124a7.59 7.59 0 0 0-1.828.224v.089h.133c.357.714.982 1.205 1.428 1.829.312.714.67 1.428.982 2.142l.133-.134c.625-.401.893-1.115.893-2.23-.223-.268-.268-.58-.49-.893-.313-.447-.848-.67-1.251-1.027z"
+                                    fill="#00678c" />
+                                <path
+                                    d="M85.96 128.227h16.731c1.963 0 3.881-.402 5.398-1.117 2.498-1.158 3.748-2.721 3.748-4.773v-4.283c0-1.65-1.428-3.256-4.148-4.283-1.473-.58-3.258-.848-4.998-.848h-7.049c-2.365 0-3.48-.715-3.748-2.275-.045-.178-.045-.357-.045-.535v-2.633c0-.178 0-.312.045-.49.268-1.205.892-1.562 2.945-1.74.178 0 .401-.045.58-.045h16.642v-3.881H95.687c-2.365 0-3.57.178-4.685.49-3.48 1.115-4.997 2.811-4.997 5.801v3.391c0 2.633 2.989 4.863 7.942 5.398.58 0 1.115.045 1.695.045h6.024c.223 0 .445 0 .623.045 1.875.178 2.633.49 3.213 1.158.312.357.447.67.447 1.072v3.391c0 .402-.268.938-.848 1.383-.492.447-1.34.715-2.455.803-.223 0-.4.045-.625.045H85.96v3.881zM148.156 121.443c0 4.016 2.945 6.246 8.969 6.693.535.045 1.115.09 1.65.09h15.17v-3.883h-15.26c-3.436 0-4.729-.848-4.729-2.9v-20.121h-5.801v20.121h.001zM115.541 121.666v-13.83c0-3.525 2.453-5.666 7.361-6.336.492-.09 1.072-.09 1.562-.09h11.064c.535 0 1.027 0 1.607.09 4.863.67 7.361 2.811 7.361 6.336v13.83c0 2.857-1.07 4.373-3.48 5.355l5.756 5.176h-6.781l-4.641-4.15-4.686.268h-6.201c-1.07 0-2.186-.133-3.436-.49-3.701-.983-5.486-2.946-5.486-6.159zm6.291-.355c0 .223.045.4.09.625.357 1.605 1.873 2.498 4.148 2.498h5.311l-4.863-4.373h6.781l4.238 3.793c.76-.402 1.295-1.027 1.473-1.83.045-.223.045-.4.045-.58v-13.295c0-.135 0-.312-.045-.492-.357-1.516-1.873-2.363-4.105-2.363h-8.834c-2.588 0-4.238 1.115-4.238 2.855v13.162h-.001zM176.623 128.227h.848v-3.213h1.16v-.67h-3.168v.67h1.16v3.213zm6.514 0h.758v-3.883h-1.16l-1.025 2.678-1.025-2.678h-1.205v3.883h.803v-2.945l1.115 2.945h.58l1.115-2.945h.045v2.945h-.001z"
+                                    fill="#ce8b2c" />
+                                <path
+                                    d="M12.029 92.13L8.771 77.049h1.651l1.874 9.905c.223 1.026.402 2.052.536 3.078l.58-2.811 2.365-10.173h1.918l1.785 7.63c.446 1.874.758 3.658.981 5.354.134-.981.357-2.097.625-3.301l1.918-9.682H24.7L21.265 92.13h-1.562l-2.632-11.467-.402-1.785c-.089.669-.223 1.25-.357 1.785L13.679 92.13h-1.65zM25.727 84.813c0-2.588.58-4.551 1.695-5.935 1.116-1.383 2.543-2.052 4.239-2.052 1.07 0 2.097.268 2.989.892s1.606 1.517 2.142 2.677c.491 1.204.759 2.587.759 4.238 0 2.231-.491 4.016-1.518 5.443-1.115 1.562-2.587 2.32-4.372 2.32-1.83 0-3.302-.803-4.417-2.365-1.027-1.47-1.517-3.21-1.517-5.218zm1.695 0c0 1.874.401 3.302 1.205 4.328.848 1.026 1.829 1.562 2.989 1.562 1.205 0 2.231-.536 3.034-1.562s1.205-2.543 1.205-4.551c0-1.338-.178-2.454-.625-3.479-.312-.803-.803-1.428-1.428-1.874a3.529 3.529 0 0 0-2.142-.714c-1.25 0-2.276.49-3.034 1.517-.803 1.025-1.204 2.631-1.204 4.773zM39.602 92.13V77.049h5.488c1.115 0 1.963.134 2.499.446.58.268 1.026.714 1.338 1.383.357.669.536 1.428.536 2.275 0 1.161-.268 2.053-.892 2.767-.581.714-1.428 1.16-2.588 1.383.491.268.803.536 1.071.803.491.58.893 1.205 1.294 1.918l2.141 4.105h-2.052l-1.651-3.124c-.669-1.205-1.115-2.052-1.472-2.454-.312-.446-.625-.759-.937-.893s-.714-.223-1.249-.223h-1.874v6.693h-1.652v.002zm1.651-8.433h3.48c.758 0 1.338-.089 1.74-.268.401-.178.713-.491.981-.848.223-.402.312-.893.312-1.428 0-.758-.223-1.338-.669-1.784-.446-.446-1.071-.669-1.963-.669h-3.882v4.997h.001zM52.006 92.13V77.049h1.651v7.496l6.113-7.496H62l-5.22 6.113 5.443 8.968h-2.186l-4.372-7.585-2.008 2.365v5.22h-1.651zM62.982 87.267l1.562-.134c.089.803.268 1.472.58 1.918.268.491.714.848 1.249 1.115.536.312 1.16.446 1.83.446.981 0 1.695-.268 2.231-.713.535-.491.803-1.116.803-1.874 0-.446-.089-.803-.268-1.16-.178-.312-.491-.58-.893-.803-.401-.223-1.249-.535-2.543-.892-1.16-.357-2.008-.714-2.499-1.071a3.256 3.256 0 0 1-1.16-1.294c-.268-.536-.402-1.16-.402-1.829 0-1.25.402-2.231 1.16-2.99.803-.803 1.874-1.16 3.212-1.16.892 0 1.695.178 2.409.535.669.357 1.205.892 1.606 1.562a5.06 5.06 0 0 1 .58 2.409l-1.562.134c-.045-.981-.357-1.695-.848-2.186-.536-.491-1.205-.714-2.141-.714-.938 0-1.651.223-2.098.625a1.99 1.99 0 0 0-.758 1.606c0 .625.179 1.071.536 1.428.356.312 1.16.669 2.409 1.026 1.249.312 2.097.625 2.588.848.759.401 1.338.892 1.695 1.517.402.625.58 1.383.58 2.231a4.67 4.67 0 0 1-.625 2.364c-.402.714-.937 1.25-1.651 1.606-.669.401-1.517.58-2.499.58-1.517 0-2.766-.446-3.658-1.383s-1.381-2.186-1.425-3.747zM82.524 92.13l-3.257-15.081h1.651l1.874 9.905c.223 1.026.401 2.052.536 3.078l.58-2.811 2.364-10.173h1.919l1.784 7.63a52.74 52.74 0 0 1 .982 5.354c.134-.981.357-2.097.58-3.301l1.963-9.682h1.695L91.76 92.13h-1.562l-2.633-11.467-.401-1.785c-.089.669-.223 1.25-.357 1.785L84.175 92.13h-1.651zM96.98 92.13V77.049h1.651V92.13H96.98zM104.654 92.13V78.834h-4.06v-1.785h9.771v1.785h-4.103V92.13h-1.608zM111.973 92.13V77.049h1.65v6.202h6.424v-6.202h1.652V92.13h-1.652v-7.094h-6.424v7.094h-1.65z"
+                                    fill="#00678c" />
+                            </g>
+                        </svg>
+                        <p>MySQL | Intermediate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg width="70" viewBox="0 0 256 326" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMinYMin meet">
+                            <g fill="#2BA977">
+                                <path
+                                    d="M114.784 0h53.278v244.191c-27.29 5.162-47.38 7.193-69.117 7.193C33.873 251.316 0 222.245 0 166.412c0-53.795 35.93-88.708 91.608-88.708 8.64 0 15.222.68 23.176 2.717V0zm1.867 124.427c-6.24-2.038-11.382-2.717-17.965-2.717-26.947 0-42.512 16.437-42.512 45.243 0 28.046 14.88 43.532 42.17 43.532 5.896 0 10.696-.332 18.307-1.351v-84.707z" />
+                                <path
+                                    d="M255.187 84.26v122.263c0 42.105-3.154 62.353-12.411 79.81-8.64 16.783-20.022 27.366-43.541 39.055l-49.438-23.297c23.519-10.93 34.901-20.588 42.17-35.327 7.61-15.072 10.01-32.529 10.01-78.445V84.261h53.21zM196.608 0h53.278v54.135h-53.278V0z" />
+                            </g>
+                        </svg>
+                        <p>Django | Basic</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-auto p-4">
+                    <div class="skills__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 767.8 768" width="60">
+                            <style>
+                                .st0 {
+                                    fill: #77bc1f
+                                }
+                            </style>
+                            <path class="st0"
+                                d="M698.3 40c-10.8 25.8-24.5 50.3-41 72.8C585.1 40.6 487.1 0 385 0 173.8 0 0 174 0 385.5 0 491 43.2 592 119.6 664.8l14.2 12.6c69.4 58.5 157.3 90.7 248 90.7 200.8 0 369.6-157.4 383.9-358 10.5-98.2-18.3-222.4-67.4-370.1zm-524 627c-6.2 7.7-15.7 12.2-25.6 12.2-18.1 0-32.9-14.9-32.9-33s14.9-33 32.9-33c7.5 0 14.9 2.6 20.7 7.4 14.1 11.4 16.3 32.3 4.9 46.4zm522.4-115.4c-95 126.7-297.9 84-428 90.1 0 0-23.1 1.4-46.3 5.2 0 0 8.7-3.7 20-8 91.3-31.8 134.5-38 190-66.5 104.5-53.2 207.8-169.6 229.3-290.7C621.9 398.2 501.3 498.3 391.4 539c-75.3 27.8-211.3 54.8-211.3 54.8l-5.5-2.9C82 545.8 79.2 345.1 247.5 280.3c73.7-28.4 144.2-12.8 223.8-31.8 85-20.2 183.3-84 223.3-167.2 44.8 133.1 98.7 341.5 2.1 470.3z" />
+                        </svg>
+                        <p>SprintBoot | Basic</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+        </div>
+
+        <!-- Education -->
+        <div class="bg_black_light" id="education">
+            <div class="container p-4">
+                <h3 class="text-center">Education</h3>
+                <div class="row">
+                    <div class="col-md-4 p-4">
+                        <div class="card bg_black_light card-education align-items-center">
+                            <img class="bg_lead" src="./static/education/umss.png" alt="UMSS" class="img-top img-fluid">
+                            <div class="card-body m-0 p-1 text-center">
+                                <p>
+                                    Electronic engineer<br>
+                                    <strong class="title_quaternary">2007-2013</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="card bg_black_light card-education align-items-center">
+                            <img class="bg_lead" src="./static/education/jala.png" alt="UMSS" class="img-top img-fluid">
+                            <div class="card-body m-0 p-1 text-center">
+                                <p>
+                                    Commercial web development<br>
+                                    <strong class="title_quaternary">2017-2018</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="card bg_black_light card-education align-items-center">
+                            <img class="bg_lead" src="./static/education/alura.png" alt="UMSS"
+                                class="img-top img-fluid">
+                            <div class="card-body m-0 p-1 text-center">
+                                <p>
+                                    Full-Stack Developer<br>
+                                    <strong class="title_quaternary">2022</strong>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+        </div>
+
+        <!-- Projects -->
+        <div class="container p-4" id="experience">
+            <div class="row my-4 text-center">
+                <h3>My Projects</h3>
+                <div class="col-md-6 p-4">
+                    <div class="card bg_black_light card-project">
+                        <img src="./static/projects/secretcode.png" alt="Secret Code" class="img-top">
+                        <div class="card-body p-1 m-1">
+                            <h2>Text Encoder</h2>
+                            <p>Encoding and decoding a text</p>
+                            <div>
+                                <a href="https://edson-yanez-villa.github.io/text-encoder/" target="_blank"
+                                    class="btn btn-primary btn-sl rounded my-3"><i class="fa-solid fa-eye"></i> Demo</a>
+                                <a href="https://github.com/edson-yanez-villa/text-encoder"
+                                    class="btn btn-secondary btn-sl rounded my-3" target="_blank"><i
+                                        class="fa-brands fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="card bg_black_light card-project">
+                        <img src="./static/projects/forca.png" alt="Secret Code" class="img-top">
+                        <div class="card-body p-1 m-1">
+                            <h2>Hangman Game</h2>
+                            <p>Clasic game of hangman using HTML, CSS and JavaScript</p>
+                            <div>
+                                <a href="https://edson-yanez-villa.github.io/hangman-game/" target="_blank"
+                                    class="btn btn-primary btn-sl rounded my-3"><i class="fa-solid fa-eye"></i> Demo</a>
+                                <a href="https://github.com/edson-yanez-villa/hangman-game"
+                                    class="btn btn-secondary btn-sl rounded my-3" target="_blank"><i
+                                        class="fa-brands fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="card bg_black_light card-project">
+                        <img src="./static/projects/portfolio.png" alt="Secret Code" class="img-top">
+                        <div class="card-body p-1 m-1">
+                            <h2>Portfolio</h2>
+                            <p>My Portfolio that display all information about my carrier</p>
+                            <div>
+                                <a href="https://edson-yanez-villa.github.io/edson-yanez-villa/" target="_blank"
+                                    class="btn btn-primary btn-sl rounded my-3"><i class="fa-solid fa-eye"></i> Demo</a>
+                                <a href="https://github.com/edson-yanez-villa/edson-yanez-villa"
+                                    class="btn btn-secondary btn-sl rounded my-3" target="_blank"><i
+                                        class="fa-brands fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="card bg_black_light card-project">
+                        <img src="./static/projects/converter.jpg" alt="Secret Code" class="img-top">
+                        <div class="card-body p-1 m-1">
+                            <h2>Currency and temperature converter</h2>
+                            <p>Program that use Java and JavaSwin to corvert the turrency and temperature</p>
+                            <div>
+                                <a href="https://github.com/edson-yanez-villa/text-encoder"
+                                    class="btn btn-secondary btn-sl rounded my-3" target="_blank"><i
+                                        class="fa-brands fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="card bg_black_light card-project">
+                        <img src="./static/projects/hotel-latam.png" alt="Secret Code" class="img-top">
+                        <div class="card-body p-1 m-1">
+                            <h2>Hotel Latam</h2>
+                            <p>Program that use Java and JavaSwin to register a reservation in a hotel</p>
+                            <div>
+                                <a href="https://www.youtube.com/watch?v=ggNGpgPYdAs" target="_blank"
+                                    class="btn btn-primary btn-sl rounded my-3"><i class="fa-solid fa-eye"></i> Demo</a>
+                                <a href="https://github.com/edson-yanez-villa/hotel-latam"
+                                    class="btn btn-secondary btn-sl rounded my-3" target="_blank"><i
+                                        class="fa-brands fa-github"></i> Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+        </div>
+
+        <!-- Contact -->
+        <div class="bg_black_light" id="contact">
+            <div class="container p-4">
+                <div class="row my-4 align-items-center">
+                    <div class="col-md-6 p-4 text-center">
+                        <div class="p-4">
+                            <h3 class="title_blue">
+                                Do you have a project in mind?
+                                <br />
+                                <strong class="title_white">Let's talk!</strong>
+                            </h3>
+                        </div>
+                        <!---- contact #1 ---->
+                        <div class="p-4">
+                            <h3>
+                                <a class="btn btn-primary" href="mailto: yanezvilla.edson@gmail.com" target="_blank">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <strong>Contact</strong>
+                                </a>
+                            </h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+59172217781">+59172217781</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 p-4">
-                <div class="card bg-black card-project">
-                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-top">
-                    <div class="card-body">
-                        <h2>{{project.title}}</h2>
-                        <p>{{project.description}}</p>
-                        {% if project.url %}
-                        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm"
-                            target="_blank">{{project.url}}</a>
-                        {% endif %}
+                    <div class="contact-profile col-md-6 p-4 text-start">
+                        <img src="static/contact/contact.png" class="rounded-circle" style="width: 250px;"
+                            alt="contact-profile" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <section class="bg_black_light">
+        <div class="container p-4">
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Copyright
+                        <strong>
+                            <i class="fa-solid fa-copyright"></i> | Coded with
+                            <a href="#" target="_blank">
+                                Edson Yañez
+                            </a>
+                        </strong>
+                    </p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/yanezvilla.edson" target="_blank"><i
+                                class="fab fa-facebook-f social__icons fa-2x me-3" style="color: #3b5998;"></i></a>
 
+                        <!-- Linkedin -->
+                        <a href="https://www.linkedin.com/in/moises-edson-ya%C3%B1ez-villa-68b309125/" target="_blank"><i
+                                class="fab fa-linkedin-in social__icons title_blue fa-2x me-3"></i></a>
+
+                        <!-- Github -->
+                        <a href="https://github.com/edson-yanez-villa" target="_blank"><i
+                                class="fab fa-github social__icons fa-2x me-3"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
