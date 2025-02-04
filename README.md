@@ -1,6 +1,6 @@
 # Profolio
 
-###  Insignias Alura Latam 🥇
+<!-- ###  Insignias Alura Latam 🥇 -->
 
 <p align="center">
 <!-- <img  width="150"  src="https://user-images.githubusercontent.com/109878301/193426143-82934fab-96c3-4951-8c52-a1d448030258.png">
